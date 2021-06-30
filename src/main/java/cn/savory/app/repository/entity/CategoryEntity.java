@@ -1,18 +1,16 @@
 package cn.savory.app.repository.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "tag")
-public class TagEntity {
+@Table(name = "category")
+public class CategoryEntity {
 
     @Id
     @GeneratedValue
     private Integer id;
 
+    @Column(name = "category_name")
     private String name;
 
     public Integer getId() {
